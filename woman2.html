@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>약장수.com</title>
+    <style media="screen">
+body{
+      background-color: #d0efff;
+      z-index: 1;
+    }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #1167b1;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+}
+li {
+  float: left;
+  border-right: 1px solid #03254c;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px 15px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #ff9e5a;
+}
+.main_div{
+  height: 43px;
+}
+    </style>
+  </head>
+  <body>
+    <div class="main_div">
+      <ul>
+        <li><a href="index2.html" style="padding:0"><img src="로고.jpg" width="67px"></a></li>
+        <li><a href="사이트소개2.html">사이트 소개</a></li>
+        <li><a href="search2.html">약품검색</a></li>
+        <li><a href="gender2.html">약품추천</a></li>
+        <li style="float:right"><a href="도움말2.html"><b>도움말</b></a></li>
+        <li style="float:right"><a href="index.html"><b>로그아웃</b></a></li>
+      </ul>
+    </div>
+  <button type="button" onclick="document.write('1. 해열진통제 2. 소염진통제 3. 해열진통소염제 / F5를 누르면 되돌아갑니다.')">두통</button><br><br>
+  <button type="button" onclick="document.write('1. 내장약 2. 소화제 3. 유산균약 / F5를 누르면 되돌아갑니다.')">복통</button><br><br>
+  <button type="button" onclick="document.write('1. 진통제 2. 달맞이꽃종자유 3. 파라세타몰진통제 / F5를 누르면 되돌아갑니다.')">생리통</button><br><br>
+  <button type="button" onclick = "location.href = 'gender2.html' ">돌아가기</button>
+  </body>
+</html>

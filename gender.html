@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>약장수.com</title>
+    <style media="screen">
+body{
+      background-color: #d0efff;
+      z-index: 1;
+    }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #1167b1;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+}
+li {
+  float: left;
+  border-right: 1px solid #03254c;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px 15px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #ff9e5a;
+}
+.main_div{
+  height: 43px;
+}
+    </style>
+    <div class="main_div">
+      <ul>
+        <li><a href="index.html" style="padding:0"><img src="로고.jpg" width="67px"></a></li>
+        <li><a href="사이트소개.html">사이트 소개</a></li>
+        <li><a href="search.html">약품검색</a></li>
+        <li><a href="gender.html">약품추천</a></li>
+        <li style="float:right"><a href="도움말.html"><b>도움말</b></a></li>
+        <li style="float:right"><a href="로그인.html"><b>로그인</b></a></li>
+      </ul>
+    </div>
+    <script>
+       var gender = prompt("성별? 1.남자 2.여자");
+
+       if(gender == "남자"){
+         window.location.href = 'man.html';
+       } else if(gender == "여자"){
+         window.location.href = 'woman.html';
+       } else{
+         document.write("잘못 입력하셨습니다");
+       }
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
